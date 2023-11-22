@@ -17,9 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from rest_framework import routers
+from core.api import viewsets
 
 router = routers.DefaultRouter()
-router.register(r'pontoturistico', )
+router.register(r'pontoturistico', viewsets.PontoTuristicoViewset)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
