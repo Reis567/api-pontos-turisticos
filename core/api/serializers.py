@@ -1,4 +1,4 @@
-from core.models import PontoTuristico
+from ..models import PontoTuristico
 from rest_framework.serializers import ModelSerializer
 
 class PontoTuristicoSerializer(ModelSerializer):
