@@ -7,7 +7,7 @@ from endereco.api.serializers import EnderecoSerializer
 
 class PontoTuristicoSerializer(ModelSerializer):
     atracoes = AtracaoSerializer(many=True, read_only=True)
-    comentarios = ComentarioSerializer(many=True)
+    comentarios = ComentarioSerializer(many=True, read_only=True)
     avaliacoes = AvaliacaoSerializer(many=True)
     endereco = EnderecoSerializer()
     class Meta:
